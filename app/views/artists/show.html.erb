@@ -1,0 +1,19 @@
+<htmL>
+  <head></head>
+  <body>
+  <ul>
+  <% Artist.all.each do |x| %>
+  <%= x.name %>
+  <% end %>
+  <% Artist.all.each do |x| %>
+  <% x.genres.each do |y| %>
+    <%= y.name %>
+  <% end %>
+  <% end %>
+<% Artist.all.each do |x| %>
+  <= x.songs.each do |y| %>
+      <%= y.name %>
+  <% end %>
+  <% end %>
+  </body>
+</htmL>

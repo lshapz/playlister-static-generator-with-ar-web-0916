@@ -1,0 +1,14 @@
+ <% z = [] %>
+   <% Song.all.each do |x| %>
+  <% z << x.artist.name %>
+  <% end %>
+
+  <% Song.all.each do |x| %>
+  <% z << x.name %>
+  <% end %>
+
+ <% Song.all.each do |x| %>
+  <% z << x.genre.name %>
+  <% end %>
+
+<%= / #{z[0]} - #{z[1]} - #{z[2]} / %>
