@@ -1,0 +1,5 @@
+<h1>Genres</h1>
+<h3><ul>
+<% @genres.each do |genre| %>
+<li><p><a href="/genres/<%=genre.slug %>"><%= genre.name.capitalize %></a></p></li>
+<% end %></ul></h3> 
