@@ -26,6 +26,7 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    rack (2.0.1)
     rake (11.1.2)
     rspec (3.4.0)
       rspec-core (~> 3.4.0)
@@ -52,9 +53,10 @@ PLATFORMS
 DEPENDENCIES
   activerecord
   pry
+  rack
   rake
   rspec
   sqlite3
 
 BUNDLED WITH
-   1.11.2
+   1.13.2

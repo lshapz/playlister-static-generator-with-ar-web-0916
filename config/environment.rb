@@ -1,5 +1,6 @@
 require 'bundler/setup'
 Bundler.require
+require_relative '../lib/support/site_generator'
 
 ENV["PLAYLISTER_ENV"] ||= "development"
 
